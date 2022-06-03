@@ -9,6 +9,7 @@ response = table.get_item(
     }
 )
 print(response['Item'])
+
 client = boto3.client('dynamodb')
 scan = client.scan(
     TableName='Customers',
